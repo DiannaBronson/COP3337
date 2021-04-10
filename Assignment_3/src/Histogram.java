@@ -19,6 +19,7 @@ public class Histogram {
      * @throws java.io.FileNotFoundException
      */
     public static void main(String[] args) throws FileNotFoundException {
+<<<<<<< HEAD
 
         //variables for the histogram
         int lessThanTen = 0;
@@ -98,5 +99,21 @@ public class Histogram {
         System.out.println("71 - 80 | " + lessThanEighty);
         System.out.println("81 - 90 | " + lessThanNinety);
         System.out.println("91 - 100 | " + lessThanHundred);
+=======
+        File file;
+        file = new File("C:\\Users\\Dianna\\Downloads\\test1.txt");
+        Scanner scan = new Scanner(file);
+
+        while (scan.hasNextInt()) {
+            int value = scan.nextInt();
+            
+            if (value <= 10){
+            System.out.println("*");
+            }
+
+        }
+        System.out.println(scan.nextInt());
+
+>>>>>>> main
     }
 }
