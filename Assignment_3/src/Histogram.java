@@ -1,11 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
+/*
  * @author Dianna
  */
 import java.io.File;
@@ -19,7 +13,6 @@ public class Histogram {
      * @throws java.io.FileNotFoundException
      */
     public static void main(String[] args) throws FileNotFoundException {
-<<<<<<< HEAD
 
         //variables for the histogram
         int lessThanTen = 0;
@@ -30,13 +23,13 @@ public class Histogram {
         int lessThanSixty = 0;
         int lessThanSeventy = 0;
         int lessThanEighty = 0;
-        int lessThanNinety = 0;
+        int lessThanNinety = 0; 
         int lessThanHundred = 0;
         int others = 0;
         int numberOfInts = 0;
 
         //accessing and scanning through the first text file
-        File file = new File("C:\\Users\\Dianna\\Downloads\\test1.txt");
+        File file = new File("C:\\Users\\Dianna\\Downloads\\test1.txt"); //change this to "test2.txt" and "test3.txt" for the other outputs
         Scanner scan = new Scanner(file);
 
         //loop that counts the values and appropriately increments the variables
@@ -82,11 +75,13 @@ public class Histogram {
             else {
 
             }
-
+            
         }
+        
+        
         //print statements
         System.out.println("Reading Integers From File: C:\\Users\\Dianna\\Downloads\\test1.txt ");
-        System.out.println("Number of Integers in the interval [1,100]: " + numberOfInts);
+        System.out.println("Number of Integers in the interval [1 - 100]: " + numberOfInts);
         System.out.println("Others: " + others);
         System.out.println("Histogram");
         System.out.println("1 - 10 | " + lessThanTen);
@@ -99,21 +94,62 @@ public class Histogram {
         System.out.println("71 - 80 | " + lessThanEighty);
         System.out.println("81 - 90 | " + lessThanNinety);
         System.out.println("91 - 100 | " + lessThanHundred);
-=======
-        File file;
-        file = new File("C:\\Users\\Dianna\\Downloads\\test1.txt");
-        Scanner scan = new Scanner(file);
-
-        while (scan.hasNextInt()) {
-            int value = scan.nextInt();
-            
-            if (value <= 10){
-            System.out.println("*");
-            }
-
-        }
-        System.out.println(scan.nextInt());
-
->>>>>>> main
     }
 }
+//output for txt1
+/*run:
+Reading Integers From File: C:\Users\Dianna\Downloads\test1.txt 
+Number of Integers in the interval [1 - 100]: 80
+Others: 54
+Histogram
+1 - 10 | 6
+11 - 20 | 8
+21 - 30 | 7
+31 - 40 | 7
+41 - 50 | 7
+51 - 60 | 11
+61 - 70 | 6
+71 - 80 | 10
+81 - 90 | 9
+91 - 100 | 9
+BUILD SUCCESSFUL (total time: 0 seconds)
+*/
+
+//output for txt2
+/*run:
+Reading Integers From File: C:\Users\Dianna\Downloads\test2.txt 
+Number of Integers in the interval [1 - 100]: 52
+Others: 48
+Histogram
+1 - 10 | 5
+11 - 20 | 6
+21 - 30 | 4
+31 - 40 | 7
+41 - 50 | 5
+51 - 60 | 4
+61 - 70 | 7
+71 - 80 | 7
+81 - 90 | 2
+91 - 100 | 5
+BUILD SUCCESSFUL (total time: 0 seconds)
+*/
+
+//output for txt3
+/*
+run:
+Reading Integers From File: C:\Users\Dianna\Downloads\test3.txt 
+Number of Integers in the interval [1 - 100]: 1
+Others: 2
+Histogram
+1 - 10 | 0
+11 - 20 | 1
+21 - 30 | 0
+31 - 40 | 0
+41 - 50 | 0
+51 - 60 | 0
+61 - 70 | 0
+71 - 80 | 0
+81 - 90 | 0
+91 - 100 | 0
+BUILD SUCCESSFUL (total time: 0 seconds)
+*/
